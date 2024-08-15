@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feed4All</title>
+    <style>
+        /* Inline CSS */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header .logo img {
+            width: 100px;
+            height: auto;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #ffeb3b;
+        }
+
+        .hero {
+            background-image: url('https://i.pinimg.com/564x/24/22/80/2422806bf8be096cb998c3c555d98ee9.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .hero h1, .hero p, .hero .button {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            margin: 0;
+            font-size: 48px;
+            color: #ffeb3b;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero p {
+            margin: 20px 0 30px;
+            font-size: 24px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffeb3b;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #ffc107;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../Images/CompanyLogo.jpg" alt="Feed4All Logo" id="Logo">
+        </div>
+        <div>
+            <h1>Feed4All</h1>
+            <p><i>Feeding the nation, with every donation!</i></p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</li>
+                <li><a href="directory.html">Food Banks & Shelters</a></li>
+                <li><a href="donation.html">Donations</a></li>
+                <li><a href="volunteersignup.html">Volunteer Sign-up</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to Feed4All</h1>
+            <p>Feeding the nation, with every donation!</p>
+            
+        </section>
+        <section>
+            <h3>Donate to Feed4All</h3>
+            <form action="donation.php" method="POST">
+                <div class="form-group">
+                    <label for="donorName">Donor Name:</label>
+                    <input type="text" id="donorName" name="donorName" required>
+                </div>
+                <div class="form-group">
+                    <label for="donorEmail">Email:</label>
+                    <input type="email" id="donorEmail" name="donorEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="donorPhone">Phone:</label>
+                    <input type="text" id="donorPhone" name="donorPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="foodType">Food Type:</label>
+                    <input type="text" id="foodType" name="foodType" required>
+                </div>
+                <div class="form-group">
+                    <label for="foodQuantity">Quantity:</label>
+                    <input type="number" id="foodQuantity" name="foodQuantity" required>
+                </div>
+                <button type="submit" class="button">Donate</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Feed4All. All Rights Reserved</p>
+    </footer>
+</body>
+</html>

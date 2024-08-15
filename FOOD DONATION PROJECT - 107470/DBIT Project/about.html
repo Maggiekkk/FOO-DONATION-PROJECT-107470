@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - Feed4All</title>
+    <style>
+        /* Inline CSS */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header .logo img {
+            width: 100px;
+            height: auto;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #ffeb3b;
+        }
+
+        .hero {
+           
+        background-image: url('https://i.pinimg.com/564x/24/22/80/2422806bf8be096cb998c3c555d98ee9.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding: 100px 30px;
+        position: relative;
+        overflow: hidden;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .hero h1, .hero p, .hero .button {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            margin: 0;
+            font-size: 48px;
+            color: #ffeb3b;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero p {
+            margin: 20px 0 30px;
+            font-size: 24px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffeb3b;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #ffc107;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../Images/CompanyLogo.jpg" alt="Feed4All Logo" id="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</li>
+                <li><a href="directory.html">Food Banks & Shelters</a></li>
+                <li><a href="donation.html">Donations</a></li>
+                <li><a href="volunteersignup.html">Volunteer Sign-up</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>About Us</h1>
+        <p>Learn more about our mission, vision, and team.</p>
+    </div>
+
+    <main>
+        <section>
+            <h2>Our Mission</h2>
+            <p>At Feed4All, our mission is to alleviate food insecurity by connecting donors and volunteers with local food banks and shelters. We strive to create a centralized platform that ensures efficient distribution of resources to those in need.</p>
+        </section>
+
+        <section>
+            <h2>Our Vision</h2>
+            <p>We envision a world where no one goes hungry. By fostering community engagement and streamlining the donation process, we aim to make a significant impact on reducing hunger and improving the quality of life for individuals and families across Kenya.</p>
+        </section>
+
+        <section>
+            <h2>Our Team</h2>
+            <div class="team">
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/100" alt="Team Member 1">
+                    <h3>Jane Doe</h3>
+                    <p>Founder & CEO</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/100" alt="Team Member 2">
+                    <h3>John Smith</h3>
+                    <p>Operations Manager</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/100" alt="Team Member 3">
+                    <h3>Emily Johnson</h3>
+                    <p>Community Outreach Coordinator</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Feed4All. All Rights Reserved</p>
+    </footer>
+</body>
+</html>
